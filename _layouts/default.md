@@ -6,7 +6,7 @@
       <div class="flex-grow-1 bg-light">
         <div class="container my-5">
           <div class="row justify-content-center my-5">
-            <div class="col col-lg-10 col-xl-9">
+            <div class="col">
               {{ content }}
             </div>
           </div>
