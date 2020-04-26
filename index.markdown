@@ -9,7 +9,7 @@ layout: default
   </div>
 </div>
 
-<div id="carousel" class="carousel slide carousel-fade px-2 pt-4 pb-3 rounded" data-ride="carousel">
+<div id="carousel" class="carousel slide carousel-fade px-2 pt-4 pb-3 rounded" data-ride="carousel" data-pause="false">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-9">
       <div class="carousel-inner randomize">
