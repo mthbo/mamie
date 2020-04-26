@@ -39,6 +39,11 @@ layout: default
       </div>
     </div>
   </div>
+  <div class="d-lg-none d-flex justify-content-center py-2 text-secondary">
+    <span><-- </span>
+    <h3 class="mt-1 mb-0 ml-1">👆</h3>
+    <span> --></span>
+  </div>
   <a class="carousel-control-prev d-none d-lg-block pt-5 mt-5" href="#carousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
