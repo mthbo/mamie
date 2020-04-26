@@ -2,6 +2,14 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+$('#pause').show(function() {
+  $('#carousel').carousel('pause');
+})
+
+$('#pause').hide(function() {
+  $('.carousel').carousel()
+})
+
 function isvisible(obj) {
   return obj.offsetWidth > 0 && obj.offsetHeight > 0;
 }
