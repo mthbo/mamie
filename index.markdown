@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<div class="row justify-content-center pt-3 pb-4 mb-2">
+<div class="row justify-content-center px-2 pt-3 pb-3 mb-2">
   <div class="col-12 col-lg-9">
     <h1 class='font-weight-light'>{{ site.title }}</h1>
     <h2 class="font-weight-light lead text-secondary">{{ site.description }}</h2>
   </div>
 </div>
 
-<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel" class="carousel slide carousel-fade px-2 pt-4 pb-3 rounded" data-ride="carousel">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-9">
       <div class="carousel-inner randomize">
-        {% for thought in site.thoughts %}
+        {% for thought in site.thoughts reversed %}
           <div
             {% if forloop.first %}
               class="carousel-item active"
@@ -21,7 +21,10 @@ layout: default
               class="carousel-item"
             {% endif %}
           >
-            <p class="lead text-secondary pb-2"><span class='pr-2'>📭</span> {{ thought.post_date }}</p>
+            <div class="lead text-secondary pb-2 d-flex justify-content-between">
+              <p><span class='pr-2'>📭</span> {{ thought.post_date }}</p>
+              <p class='d-none' id='pause'>⏸</p>
+            </div>
             <blockquote class="blockquote text-justify">
               <p class="mb-0">{{ thought.content | markdownify }}</p>
               <footer class="blockquote-footer text-right">
