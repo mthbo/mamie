@@ -4,7 +4,7 @@ layout: default
 
 <div class="row justify-content-center px-2 pt-3 pb-3 mb-2">
   <div class="col-12 col-lg-9">
-    <h1 class='font-weight-light'>{{ site.title }}</h1>
+    <h1 class='font-weight-light'>{{ site.title }}  🤔</h1>
     <h2 class="font-weight-light lead text-secondary">{{ site.description }}</h2>
   </div>
 </div>
