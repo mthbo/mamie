@@ -13,14 +13,8 @@ layout: default
   <div class="row justify-content-center">
     <div class="col-12 col-lg-9">
       <div class="carousel-inner randomize">
-        {% for thought in site.thoughts reversed %}
-          <div
-            {% if forloop.first %}
-              class="carousel-item active"
-            {% else %}
-              class="carousel-item"
-            {% endif %}
-          >
+        {% for thought in site.thoughts %}
+          <div class="carousel-item">
             <div class="lead text-secondary pb-2 d-flex justify-content-between">
               <p><span class='pr-2'>📭</span> {{ thought.post_date }}</p>
               <p class='d-none' id='pause'>⏸</p>
