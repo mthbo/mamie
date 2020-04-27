@@ -4,14 +4,12 @@
 
 $('#carousel').hover(
   function() {
-    console.log('pause start');
-    $('#carousel').carousel('pause');
-    console.log('pause end');
+    $(this).carousel('pause');
+    $(this).addClass('carousel-paused');
   },
   function() {
-    console.log('cycle start');
-    $('#carousel').carousel('cycle');
-    console.log('cycle end');
+    $(this).carousel('cycle');
+    $(this).removeClass('carousel-paused');
   }
 )
 

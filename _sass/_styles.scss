@@ -1,8 +1,6 @@
-#carousel {
-  &:hover {
-    background: rgba(100, 100, 100, 0.1);
-    #pause {
-      display: inline !important;
-    }
+.carousel-paused {
+  background: rgba(100, 100, 100, 0.1);
+  #pause {
+    display: inline !important;
   }
 }
