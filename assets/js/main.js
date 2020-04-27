@@ -2,29 +2,16 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-var forcePause = false;
-var forceCycle = false;
-
 $('#carousel').hover(
   function() {
-    console.log('in');
-    if (forceCycle == false) {
-      console.log('pausing_start');
-      forcePause = true;
-      $('#carousel').carousel('pause');
-      forcePause = false;
-      console.log('pausing_end');
-    }
+    console.log('pause start');
+    $('#carousel').carousel('pause');
+    console.log('pause end');
   },
   function() {
-    console.log('out');
-    if (forcePause == false) {
-      console.log('cycling_start');
-      forceCycle = true;
-      $('#carousel').carousel('cycle');
-      forceCycle = false;
-      console.log('cycling_end');
-    }
+    console.log('cycle start');
+    $('#carousel').carousel('cycle');
+    console.log('cycle end');
   }
 )
 
