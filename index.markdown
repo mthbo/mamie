@@ -17,7 +17,7 @@ layout: default
           <div class="carousel-item">
             <div class="lead text-secondary pb-2 d-flex justify-content-between">
               <p><span class='pr-2'>📭</span> {{ thought.post_date }}</p>
-              <p class='d-none' id='pause'>⏸</p>
+              <div class='d-none mr-2 mt-1' id='pause'></div>
             </div>
             <blockquote class="blockquote text-justify">
               <p class="mb-0">{{ thought.content | markdownify }}</p>
