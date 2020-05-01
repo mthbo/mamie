@@ -20,7 +20,7 @@
 
 title: Pensées
 description: >- # this means to ignore newlines until "baseurl:"
-  Reccueil de pensées envoyées par Michèle à ses petits enfants.
+  Recueil de pensées envoyées par Michèle à ses petits enfants.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.les-pensees-de-michele.fr" # the base hostname & protocol for your site, e.g. http://example.com
 
